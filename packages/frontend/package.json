@@ -1,0 +1,20 @@
+{
+  "name": "@gridsome-strapi-blog/frontend",
+  "version": "0.0.0",
+  "author": "DM <dmoosocool@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "@gridsome/source-strapi": "^0.2.0",
+    "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "@gridsome-strapi-blog/backend": "^0.0.0",
+    "@gridsome/cli": "^0.3.4"
+  }
+}

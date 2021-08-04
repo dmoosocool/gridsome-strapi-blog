@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "yarn pm2 start ecosystem.config.js",
+    "stop": "yarn pm2 stop backend frontend",
+    "dev": "yarn pm2 restart backend frontend",
+    "log": "yarn pm2 status"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "pm2": "^5.1.0"
+  }
+}
