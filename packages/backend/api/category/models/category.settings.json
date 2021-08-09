@@ -14,9 +14,9 @@
     "name": {
       "type": "string"
     },
-    "journal": {
+    "projects": {
       "via": "categories",
-      "model": "journal"
+      "collection": "journal"
     }
   }
 }

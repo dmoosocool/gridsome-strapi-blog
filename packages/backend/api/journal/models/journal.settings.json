@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "journals",
   "info": {
-    "name": "journal",
+    "name": "projects",
     "description": ""
   },
   "options": {
@@ -20,7 +20,8 @@
     },
     "categories": {
       "collection": "category",
-      "via": "journal"
+      "via": "projects",
+      "dominant": true
     },
     "cover": {
       "model": "file",

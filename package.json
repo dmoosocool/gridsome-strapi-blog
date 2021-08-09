@@ -4,8 +4,8 @@
   "scripts": {
     "start": "yarn pm2 start ecosystem.config.js",
     "stop": "yarn pm2 stop backend frontend",
-    "dev": "yarn pm2 restart backend frontend",
-    "log": "yarn pm2 status"
+    "restart": "yarn pm2 restart backend frontend",
+    "status": "yarn pm2 status"
   },
   "devDependencies": {
     "lerna": "^4.0.0"

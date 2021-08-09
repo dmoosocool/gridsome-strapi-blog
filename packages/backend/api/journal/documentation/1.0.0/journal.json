@@ -541,8 +541,11 @@
                 "name": {
                   "type": "string"
                 },
-                "journal": {
-                  "type": "string"
+                "projects": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"

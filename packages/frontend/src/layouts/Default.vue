@@ -47,7 +47,7 @@ body {
 }
 
 .layout.sticky-header {
-  padding: 6rem 0;
+  padding: 6rem 0 0;
 }
 
 .header {
