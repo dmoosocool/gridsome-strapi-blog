@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout layoutClass="sticky-header">
     <div class="container">
       <div class="hero">
         <h1 class="hero-title">{{$static.metadata.hero.title}}</h1>
@@ -9,12 +9,12 @@
       </div>
 
       <div class="projects">
-        <div class="project" v-for="journal in $static.journals.edges" :key="journal.node.id" >
-          <g-link to="/" class="project-link">
-            <img class="thumbnail" :alt="journal.node.title" :src="$static.metadata.hero.server + journal.node.cover.url" width="100%"/>
-            <h3 class="project-title">{{journal.node.title}}</h3>
+        <div class="project" v-for="project in $static.projects.edges" :key="project.node.id" >
+          <g-link :to="'/project/'+ project.node.id" class="project-link">
+            <img class="thumbnail" :alt="project.node.title" :src="$static.metadata.hero.server + project.node.cover.url" width="100%"/>
+            <h3 class="project-title">{{project.node.title}}</h3>
             <div class="categories">
-              <span class="category" v-for="category in journal.node.categories" :key="category.id">{{category.name}}</span>
+              <span class="category" v-for="category in project.node.categories" :key="category.id">{{category.name}}</span>
             </div>
           </g-link>
         </div>
@@ -32,7 +32,8 @@ query {
       subtitle
     }
   }
-  journals: allStrapiJournal {
+
+  projects: allStrapiProject {
     edges {
       node {
         id
@@ -55,12 +56,13 @@ query {
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Hello, world!',
+    layoutClass: ""
   }
 }
 </script>
 
-<style>
+<style scoped>
 img {
   max-width: 100%;
 }

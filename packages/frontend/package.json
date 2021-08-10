@@ -14,7 +14,9 @@
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
+    "@gerhobbelt/markdown-it-replace-link": "^1.0.1-1",
     "@gridsome-strapi-blog/backend": "^0.0.0",
-    "@gridsome/cli": "^0.3.4"
+    "@gridsome/cli": "^0.3.4",
+    "markdown-it": "^12.2.0"
   }
 }

@@ -1,19 +1,30 @@
 <template>
-  <div id="app" class="layout sticky-header">
-    <header class="header sticky">
+  <div id="app" class="layout" :class="layoutClass">
+    <header class="header" :class="isNotHeaderSticky!==undefined ? '': 'sticky'">
       <div class="container">
         <div class="left">
           <g-link to="/" class="home-link"><g-image src="/logo.svg" :alt="$static.metadata.siteName" class="logo" /></g-link>
         </div>
         <nav class="right nav">
-          <g-link class="nav__link" to="/">Home</g-link>
+          <g-link class="nav__link" to="/journal/">Journal</g-link>
           <g-link class="nav__link" to="/about/">About</g-link>
         </nav>
       </div>
     </header>
-    <slot/>
+    <slot />
+    <footer>
+      <div class="container">
+        <span>Copyright © 2021</span>
+      </div>
+    </footer>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['layoutClass', 'isNotHeaderSticky']
+}
+</script>
 
 <static-query>
 query {
@@ -29,6 +40,7 @@ body {
   --color-base-1: #f3f3f3;
   --color-contrast: #000;
   --color-contrast-1: #2b2b2b;
+  --color-contrast-2: rgba(0, 0, 0, .7);
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
   margin: 0;
   padding: 0;
@@ -101,5 +113,17 @@ body {
   border-bottom: 1px solid;
   border-color: transparent;
   transition: border .15s;
+}
+
+img {
+  max-width: 100%;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.15rem;
+}
+footer {
+  font-size: .8rem;
+  padding: 6rem 0;
 }
 </style>

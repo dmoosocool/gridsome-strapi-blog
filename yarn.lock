@@ -1277,6 +1277,11 @@
   dependencies:
     prop-types "^15.7.2"
 
+"@gerhobbelt/markdown-it-replace-link@^1.0.1-1":
+  version "1.0.1-1"
+  resolved "https://registry.nlark.com/@gerhobbelt/markdown-it-replace-link/download/@gerhobbelt/markdown-it-replace-link-1.0.1-1.tgz#9ac5d6cc6dda3692acc8b3bbe89e5e934d4b9331"
+  integrity sha1-msXWzG3aNpKsyLO76J5ek01LkzE=
+
 "@graphql-tools/utils@7.2.4":
   version "7.2.4"
   resolved "https://registry.nlark.com/@graphql-tools/utils/download/@graphql-tools/utils-7.2.4.tgz#1164cf268988254f281b4cfbbc0e8f7ca24a8a41"
@@ -10670,7 +10675,7 @@ markdown-it-sup@^1.0.0:
   resolved "https://registry.npm.taobao.org/markdown-it-sup/download/markdown-it-sup-1.0.0.tgz#cb9c9ff91a5255ac08f3fd3d63286e15df0a1fc3"
   integrity sha1-y5yf+RpSVawI8/09YyhuFd8KH8M=
 
-markdown-it@^12.0.6:
+markdown-it@^12.0.6, markdown-it@^12.2.0:
   version "12.2.0"
   resolved "https://registry.nlark.com/markdown-it/download/markdown-it-12.2.0.tgz?cache=0&sync_timestamp=1627928755354&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fmarkdown-it%2Fdownload%2Fmarkdown-it-12.2.0.tgz#091f720fd5db206f80de7a8d1f1a7035fd0d38db"
   integrity sha1-CR9yD9XbIG+A3nqNHxpwNf0NONs=
