@@ -10,7 +10,7 @@ module.exports = {
     {
       use: "@gridsome/source-strapi",
       options: {
-        apiURL: "http://localhost:1337",
+        apiURL: "http://42.240.136.102:1337",
         queryLimit: 1000,
         contentTypes: ["category", "project", "journal"]
       }
