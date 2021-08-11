@@ -67,7 +67,7 @@ export default {
       let content = md.render(this.$page.journal.content)
       let result = content.match(/(?<=img.*?src=")[^"]+(?=")/g);
       
-      if(result.length === 0) return content;
+      if(result && result.length === 0) return content;
 
       result.forEach( item=> {
         content = content.replace(item, this.$page.metadata.hero.server + item);
