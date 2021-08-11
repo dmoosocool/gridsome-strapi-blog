@@ -115,6 +115,14 @@ body {
   transition: border .15s;
 }
 
+.nav .nav__link:last-of-type {
+  margin: 0;
+}
+
+.nav .nav__link.active, .nav .nav__link:hover {
+  border-color: inherit;
+}
+
 img {
   max-width: 100%;
 }
