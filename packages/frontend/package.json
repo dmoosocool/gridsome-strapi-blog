@@ -18,6 +18,8 @@
     "@gridsome-strapi-blog/backend": "^0.0.0",
     "@gridsome/cli": "^0.3.4",
     "axios": "^0.21.1",
+    "http-server": "^13.0.0",
+    "localserver": "^0.1.4",
     "markdown-it": "^12.2.0"
   }
 }
