@@ -17,6 +17,7 @@
     "@gerhobbelt/markdown-it-replace-link": "^1.0.1-1",
     "@gridsome-strapi-blog/backend": "^0.0.0",
     "@gridsome/cli": "^0.3.4",
+    "axios": "^0.21.1",
     "markdown-it": "^12.2.0"
   }
 }

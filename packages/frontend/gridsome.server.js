@@ -8,7 +8,8 @@
 module.exports = function(api) {
   api.loadSource(async store => {
     store.addMetadata("hero", {
-      server: "http://42.240.136.102:1337",
+      // server: "http://42.240.136.102:1337",
+      server: "http://localhost:1337",
       title: "Simplicity. Aesthetics. Value.",
       subtitle:
         "Hi there, I'm an independent Digital Designer & Art Director focused on digital design for brands that like to have fun."

@@ -7,7 +7,7 @@
         </div>
         <nav class="right nav">
           <g-link class="nav__link" to="/journal/">Journal</g-link>
-          <g-link class="nav__link" to="/about/">About</g-link>
+          <g-link class="nav__link" to="/about/">Say Hi!</g-link>
         </nav>
       </div>
     </header>
